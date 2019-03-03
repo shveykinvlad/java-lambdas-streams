@@ -1,6 +1,9 @@
 # IntelliJ
 build/**
+*/build/**
+*/out/**
 out/**
+gradle/**
 .gradle/**
 .idea/**
 */target/**
