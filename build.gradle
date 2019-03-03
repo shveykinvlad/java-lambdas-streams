@@ -1,0 +1,38 @@
+plugins { id "com.github.spotbugs" version "1.6.6" }
+
+wrapper {
+    gradleVersion = '5.2.1'
+}
+
+ext {
+    junitVersion = '5.3.1'
+    lombokVersion = '1.18.6'
+    log4j2Version = '2.11.2'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'pmd'
+    apply plugin: 'checkstyle'
+    apply plugin: 'com.github.spotbugs'
+
+    checkstyle {
+        toolVersion = '8.16'
+    }
+
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly "org.projectlombok:lombok:$lombokVersion"
+        annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    }
+}
+
+group 'com.nx.dev'
+version '1.0-SNAPSHOT'

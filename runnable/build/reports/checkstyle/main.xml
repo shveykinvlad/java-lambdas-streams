@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.16">
+<file name="D:\projects\java-training\java-lambdas-streams\runnable\src\main\java\com\nx\dev\Application.java">
+</file>
+<file name="D:\projects\java-training\java-lambdas-streams\runnable\src\main\java\com\nx\dev\task\TaskProducer.java">
+</file>
+<file name="D:\projects\java-training\java-lambdas-streams\runnable\src\main\java\com\nx\dev\thread\ThreadExecutor.java">
+</file>
+</checkstyle>
