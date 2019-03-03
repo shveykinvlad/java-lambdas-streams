@@ -27,7 +27,7 @@ class PersonComparatorTest {
     @Test
     @DisplayName("Compare by name")
     void compareByName() {
-        List<Person> expected = Arrays.asList(
+        var expected = Arrays.asList(
                 new Person(BILL, 43),
                 new Person(MARK, 34),
                 new Person(PATRICK, 25));
@@ -40,7 +40,7 @@ class PersonComparatorTest {
     @Test
     @DisplayName("Compare by age")
     void compareByAge() {
-        List<Person> expected = Arrays.asList(
+        var expected = Arrays.asList(
                 new Person(PATRICK, 25),
                 new Person(MARK, 34),
                 new Person(BILL, 43));
