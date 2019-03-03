@@ -1,0 +1,14 @@
+# IntelliJ
+build/**
+out/**
+.gradle/**
+.idea/**
+*/target/**
+*.iml
+modules.xml
+
+# Log file
+*.log.*
+*.log
+
+/target/
