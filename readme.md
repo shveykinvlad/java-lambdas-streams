@@ -126,7 +126,7 @@ It should support parallel streams.
 
 
 
-Task 8 - Magic Tree
+Task 8 - Magic Tree (Stream flatMap)
 ===================
 
 **Cost**: 20 points.

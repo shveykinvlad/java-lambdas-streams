@@ -19,7 +19,7 @@ class PersonComparatorTest {
     private static final String MARK = "Mark";
     private static final String BILL = "Bill";
 
-    private List<Person> persons = Arrays.asList(
+    private static List<Person> persons = Arrays.asList(
             new Person(MARK, 34),
             new Person(BILL, 43),
             new Person(PATRICK, 25));

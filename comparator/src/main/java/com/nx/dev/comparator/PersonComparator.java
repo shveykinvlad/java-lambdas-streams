@@ -9,13 +9,13 @@ import java.util.Comparator;
  * Comparator for {@link Person}.
  */
 @UtilityClass
-public class PersonComparator {
+class PersonComparator {
 
-    public static Comparator<Person> compareByName() {
+    static Comparator<Person> compareByName() {
         return Comparator.comparing(Person::getName);
     }
 
-    public static Comparator<Person> compareByAge() {
+    static Comparator<Person> compareByAge() {
         return (personOne, personTwo) -> personOne.getAge().compareTo(personTwo.getAge());
     }
 }
