@@ -2,8 +2,7 @@ package com.nx.dev.service;
 
 import com.nx.dev.model.Author;
 import com.nx.dev.model.Book;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,9 +13,8 @@ import java.util.stream.Collectors;
 /**
  * Book service layer.
  */
+@Log4j2
 public class BookService {
-
-    private static final Logger LOGGER = LogManager.getLogger(BookService.class);
 
     /**
      * Check if some book have number of pager more than parameter value.
@@ -67,7 +65,7 @@ public class BookService {
     public Book[] filterBySingleAuthorWithParallel(Book... books) {
         return Arrays.stream(books)
                 .parallel()
-                .peek(LOGGER::debug)
+                .peek(log::debug)
                 .filter(book -> book.getAuthors().size() == 1)
                 .toArray(Book[]::new);
     }
@@ -103,7 +101,7 @@ public class BookService {
      * Print titles.
      */
     public void printTitles(List<String> titles) {
-        titles.forEach(LOGGER::info);
+        titles.forEach(log::info);
     }
 
     public List<Author> getAuthors(Book... books) {
