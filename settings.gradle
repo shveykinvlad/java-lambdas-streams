@@ -7,4 +7,5 @@ pluginManagement {
 rootProject.name = 'java-lambdas-streams'
 include 'runnable'
 include 'comparator'
+include 'functional-interface'
 

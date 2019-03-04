@@ -38,7 +38,7 @@ Task 3 - Functional Interface Sandbox (Functional interface)
 
 
 
-Task 4 - Custom Functional Interface (Three function)
+Task 4 - Custom Functional Interface (Functional interface)
 ====================================
 
 **Cost**: 5 points.
