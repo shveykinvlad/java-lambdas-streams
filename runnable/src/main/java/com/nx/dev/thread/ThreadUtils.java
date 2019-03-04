@@ -6,7 +6,7 @@ import lombok.experimental.UtilityClass;
  * Manipulations with concurrency.
  */
 @UtilityClass
-public class ThreadExecutor {
+public class ThreadUtils {
 
     public static void executeTask(Runnable runnable) {
         Thread thread = new Thread(runnable);

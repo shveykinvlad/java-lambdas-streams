@@ -16,7 +16,7 @@ import java.util.function.UnaryOperator;
  */
 @UtilityClass
 @Log4j2
-public class DefaultFunctionInterfaceImpl {
+public class DefaultFunctionInterfaceUtils {
 
     public static Supplier<String> supplier() {
         return () -> "";

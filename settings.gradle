@@ -8,4 +8,5 @@ rootProject.name = 'java-lambdas-streams'
 include 'runnable'
 include 'comparator'
 include 'functional-interface'
+include 'stream'
 

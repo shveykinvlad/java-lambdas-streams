@@ -14,12 +14,12 @@ class ThreeFunctionImplTest {
     @Test
     void parallelepipedArea() {
         var parallelepipedArea = THREE_FUNCTION.parallelepipedArea();
-        assertEquals(Integer.valueOf(88), parallelepipedArea.apply(2, 4, 6));
+        assertEquals(Integer.valueOf(88), parallelepipedArea.apply(2, 4, 6), "Check parallelepiped area");
     }
 
     @Test
     void tripleStringConcat() {
         var tripleStringConcat = THREE_FUNCTION.tripleStringConcat();
-        assertEquals("tripleStringConcatenation", tripleStringConcat.apply("triple", "String", "Concatenation"));
+        assertEquals("tripleStringConcatenation", tripleStringConcat.apply("triple", "String", "Concatenation"), "Check string concatenation");
     }
 }
