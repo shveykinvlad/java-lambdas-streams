@@ -9,7 +9,7 @@ import lombok.experimental.UtilityClass;
 public class ThreadUtils {
 
     public static void executeTask(Runnable runnable) {
-        Thread thread = new Thread(runnable);
+        var thread = new Thread(runnable);
         thread.start();
     }
 }

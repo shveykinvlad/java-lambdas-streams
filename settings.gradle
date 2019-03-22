@@ -9,4 +9,5 @@ include 'runnable'
 include 'comparator'
 include 'functional-interface'
 include 'stream'
+include 'collector'
 
