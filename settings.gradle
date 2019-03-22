@@ -10,4 +10,5 @@ include 'comparator'
 include 'functional-interface'
 include 'stream'
 include 'collector'
+include 'stream-flatmap'
 
