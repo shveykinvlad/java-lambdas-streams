@@ -37,6 +37,6 @@ public class ToStringStatistics implements Collector<String, StringStatistics, S
 
     @Override
     public Set<Characteristics> characteristics() {
-        return EnumSet.of(Characteristics.CONCURRENT);
+        return EnumSet.of(Characteristics.CONCURRENT, Characteristics.IDENTITY_FINISH, Characteristics.UNORDERED);
     }
 }

@@ -5,10 +5,12 @@ pluginManagement {
 }
 
 rootProject.name = 'java-lambdas-streams'
+
 include 'runnable'
 include 'comparator'
 include 'functional-interface'
 include 'stream'
 include 'collector'
 include 'stream-flatmap'
+include 'math-collector'
 

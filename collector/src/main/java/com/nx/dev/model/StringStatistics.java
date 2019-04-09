@@ -28,7 +28,7 @@ public class StringStatistics {
      * @return combination of two string statistics
      */
     public static StringStatistics combine(StringStatistics a, StringStatistics b) {
-        b.stringFrequencyMap.forEach((key, value) -> a.stringFrequencyMap.merge(key, value, (v1, v2) -> v1 + v2));
+        b.stringFrequencyMap.forEach((key, value) -> a.stringFrequencyMap.merge(key, value, Integer::sum));
         a.count = a.count + b.count;
 
         return a;
